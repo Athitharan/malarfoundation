@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="img/logo.png" type="image/">
+    <title>Malar Foundation</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            padding: 20px;
+            display: grid;
+            grid-template-columns: 2fr 2fr;
+            gap: 20px;
+            background-color: rgba(0, 0, 0, 0.3);
+            margin-left:10%;
+            top: 40%;
+            border-radius: 1rem;
+            width: 80%;
+
+
+        }
+        .contact-info input[type="text"],
+        .contact-info input[type="email"],
+        .contact-info form{
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            box-sizing: border-box;
+            color: #669900;
+
+
+        }
+
+        .contact-info h2 {
+            margin: 20px;
+            color: darkred;
+        }
+
+        .contact-form {
+            max-width: 400px;
+            margin: 0 auto;
+        }
+        .contact-form h2{
+            margin: 20px;
+            color: darkred;
+        }
+        .contact-form input[type="text"],
+        .contact-form input[type="email"],
+        .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            box-sizing: border-box;
+        }
+        .contact-form input[type="submit"] {
+            background-color: #851409;
+            color: white;
+            padding: 15px 20px;
+            cursor: pointer;
+            border-radius: .5rem;
+            font-weight: bold;
+        }
+        .contact-form input[type="submit"]:hover {
+            background-color: #013701;
+        }
+
+
+    </style>
+    <!--------------------------------CSS End------------------------------------------------>
+
+</head>
+<body>
+<header>
+    <div class="menu-logo">
+        <a href="index.html" class="link-format">
+            <img src="img/logo.png" alt="Logo" class="menu-logo-img">
+        </a>
+        <a href="index.html" class="logo-text link-format">Malar Foundation</a>
+    </div>
+    <div class="menuToggle"></div>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li>
+                <a href="#">Gallery</a>
+                <ul>
+                    <li>
+                        <a href="photo.html">Photo Gallery</a>
+                    </li>
+                    <li>
+                        <a href="video.html">Video Gallery</a>
+                    </li>
+                </ul>
+            </li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="services.html">Our Services</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </nav>
+</header>
+<script>
+    let menuToggle = document.querySelector(".menuToggle");
+    let header = document.querySelector("header");
+    menuToggle.onclick = function () {
+        header.classList.toggle("active");
+    };
+</script>
+<!--------------------------------Header Section End------------------------------------------------>
+<div class="banner-section" style="background: url('img/pic1.jpg');background-size: 100% 100%">
+    <div class="donate-button-div">
+        <a href="donation.html" class="donate-link link-format">
+            <button class="donate-button">Donate Here</button></a>
+    </div>
+    <div class="banner-desc">
+        <h1 class="banner-slogan">
+            Welcome <br>To Malar Foundation
+        </h1>
+        <h1 class="banner-slogan-1"> Giving Hands, Changing World </h1>
+    </div>
+</div>
+<!--------------------------------Main Banner Section End------------------------------------------------>
+
+<h1 class="main-heading">Please Contact Us</h1>
+<div class="container">
+    <div class="contact-info">
+    <h2>Please Keep in Touch</h2>
+         <form>
+        <label>
+            <input type="text" name="name" placeholder="Your Name" required>
+            </label>
+            <label>
+            <input type="email" name="email" placeholder="Your Email" required>
+            </label>
+         <label>
+            <input type="text" name="name" placeholder="Your Name" required>
+            </label>
+            <label>
+            <input type="email" name="email" placeholder="Your Email" required>
+            </label>
+         <label>
+            <input type="text" name="name" placeholder="Your Name" required>
+            </label>
+            <label>
+            <input type="email" name="email" placeholder="Your Email" required>
+            </label>
+         <label>
+            <input type="text" name="name" placeholder="Your Name" required>
+            </label>
+            <label>
+            <input type="email" name="email" placeholder="Your Email" required>
+            </label>
+         <label>
+            <input type="text" name="name" placeholder="Your Name" required>
+            </label>
+            <label>
+            <input type="email" name="email" placeholder="Your Email" required>
+            </label>
+         <label>
+            <input type="text" name="name" placeholder="Your Name" required>
+            </label>
+            <label>
+            <input type="email" name="email" placeholder="Your Email" required>
+            </label>
+         <label>
+            <input type="text" name="name" placeholder="Your Name" required>
+            </label>
+            <label>
+            <input type="email" name="email" placeholder="Your Email" required>
+            </label>
+         <label>
+            <input type="text" name="name" placeholder="Your Name" required>
+            </label>
+            <label>
+            <input type="email" name="email" placeholder="Your Email" required>
+            </label>
+         </form>
+    </div>
+    <!--------------------------------Contact Address section End------------------------------------------------>
+    <div class="contact-form">
+        <h2>Please Keep in Touch</h2>
+
+        <form >
+            <label>
+            <input type="text" name="name" placeholder="Your Name" required>
+            </label>
+            <label>
+            <input type="email" name="email" placeholder="Your Email" required>
+            </label>
+            <label>
+            <input type="text" name="email" placeholder="Your Telephone" required>
+            </label>
+
+            <input type="submit" value="Submit">
+           
+        </form>
+    </div>
+</div>
+
+<!--------------------------------Footer Start------------------------------------------------>
+
+<footer>
+        <div class="social-media">
+            <h2>
+                <i class="fa-brands fa-square-facebook"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-square-instagram"></i>
+                <i class="fa-brands fa-youtube"></i>
+            </h2>
+        </div>
+
+        <div class="copy-right">
+            <a>Copyright By Hari, All Rights Reserved By Malar Foundation</a>
+        </div>
+    </footer>
+</body>
+</html>

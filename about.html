@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="icon" href="img/logo.png" type="image/">
+    <title>Malar Foundation</title>
+
+    <style>
+
+        .container {
+            max-width: 100vw;
+            margin: 0 auto;
+            padding: 20px;
+            display: grid;
+            grid-gap: 20px;
+            grid-template-columns: 1fr 1fr;
+        }
+        .section {
+            padding: 5rem;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            animation: fadeInUp 1s ease;
+            overflow: hidden;
+        }
+        .section-founder {
+            padding: 10px;
+            display: grid;
+            background-color: rgba(171, 220, 73, 0.82);
+            margin: 10px;
+            border-radius: 1rem;
+            }
+
+        .section-founder h2 {
+            color: darkred;
+            margin-top: 0;
+        }
+            .section h2 {
+                color: #6a0707;
+                margin-top:3px;
+            }
+
+            .section p {
+                color: #0e0e0e;
+                line-height: 1.8;
+                text-align: justify;
+                font-size: 18px;
+            }
+
+            .section:nth-child(odd) {
+                background-color: rgba(17, 225, 194, 0.89);
+            }
+
+            .section:nth-child(even) {
+                background-color: rgba(191, 120, 120, 0.99);
+            }
+
+            .team-member {
+                display: flex;
+                align-items: center;
+            }
+            .team-member div{
+                margin: 5px 10px 10px 50px;
+                line-height: 1.7rem;
+                text-align: justify;
+                font-size:18px;
+            }
+            .section-ul{
+                 margin: 5px 10px 10px 50px;
+                line-height: 1.7rem;
+                text-align: justify;
+                font-size:18px;
+}
+            .team-member img {
+                height: 400px;
+                width: 400px;
+                border-radius: 10%;
+                margin-left: 20px;
+            }
+
+        @media (max-width: 768px) {
+            .container {
+                grid-template-columns: 1fr;
+            }
+            .team-member{
+                display: flex;
+                flex-wrap: wrap;
+            }
+        }
+
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+                to {
+                    opacity: 1;
+                    transform: translateY(0);
+                }
+            }
+
+    </style>
+
+</head>
+<!--------------------------------CSS End------------------------------------------------>
+
+<body>
+<header>
+    <div class="menu-logo">
+        <a href="index.html" class="link-format">
+            <img src="img/logo.png" alt="Logo" class="menu-logo-img">
+        </a>
+        <a href="index.html" class="logo-text link-format">Malar Foundation</a>
+    </div>
+
+    <div class="menuToggle"></div>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li>
+                <a href="#">Gallery</a>
+                <ul>
+                    <li>
+                        <a href="photo.html">Photo Gallery</a>
+                    </li>
+
+                    <li>
+                        <a href="video.html">Video Gallery</a>
+
+                    </li>
+                </ul>
+            </li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="services.html">Our Services</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </nav>
+</header>
+<script>
+    let menuToggle = document.querySelector(".menuToggle");
+    let header = document.querySelector("header");
+    menuToggle.onclick = function () {
+        header.classList.toggle("active");
+    };
+</script>
+<!--------------------------------Header End------------------------------------------------>
+<div class="banner-section" style="background: url('img/pic1.jpg');background-size: 100% 100%">
+    <div class="donate-button-div">
+        <a href="donation.html" class="donate-link link-format">
+            <button class="donate-button">Donate Here</button></a>
+    </div>
+    <div class="banner-desc">
+        <h1 class="banner-slogan">
+            Welcome <br>To Malar Foundation
+        </h1>
+        <h1 class="banner-slogan-1"> Giving Hands, Changing World </h1>
+    </div>
+</div>
+
+<!--------------------------------Banner section End------------------------------------------------>
+<div><h1 class="main-heading">About Malar Foundation</h1></div>
+    <div class="section-founder">
+        <div class="team-member">
+            <div>
+
+             <img src="img/pic8.jpg" alt="Team Member1">
+                <h4 style="text-align: center">Founder Of Malar Foundation</h4>
+                <h2 style="text-align: center">Poomalar Sivarajah</h2>
+
+            </div>
+            <div>
+                <p><strong>The Beginnings of Mala Foundation</strong></p>
+                <p>It was the peak time of the civil war; tensions were running high in the diaspora community as blood was
+                    shed freely. Marches and protests were carried out in London, Toronto and Paris round the clock.
+                    Text messages and emails were being sent out every hour. During that time all wanted to contribute
+                    something to relieve the suffering of the people devastated by the war but didn’t know what to do or
+                    whom to turn to. During that tense time The MALA FOUNDATION was formed as a charity in the in Sri Lanka
+                    by likeminded individual Name call <b>POOMALAR SIVARAJAH.</b> It was but a coincidence that the official
+                    date of the commencement of registration of the new charity was 18 May 2020.<br>
+                    And she gathered number of kind mind individuals all around the world and formed the administration.
+                    Then they focused to protect children. <b>The services of Malar foundation</b> giving hands to basic needy people in many ways.
+                </p>
+            </div>
+        </div>
+    </div>
+
+
+<div class="container">
+    <div class="section">
+        <h2>Our Vision</h2>
+        <p>Our Vision is <b><i>Making Smile, Changing Life</i></b><br>
+                         Therefor our trustees took over many kind of missions to fullfill the vision of the
+                          Malar Foundation. Mainly our missions forces on children education, protecting child worker,
+                          disabled people and basic needy people.</p>
+
+    </div>
+
+    <div class="section">
+        <h2>Our Mission</h2>
+        <p>Furthering our cause is the most important goal of our organization. We seek to support, empower, and provide
+            high quality resources to our community in a safe and secure environment. We are here for the relief of
+            poverty and the resettlement and the rehabilitation of children, because of the civil disturbances
+            in Sri Lanka. Our mission fully forces <i>POVERTY RELIEF, SHELTER, EDUCATION and MEDICINE.</i></p>
+    </div>
+
+    <div class="section">
+        <h2>Our Values</h2>
+   <ul class="section-ul" ><li> Improve the quality of life for the needy Children in the Sri Lanka.</li>
+       <li>	Foster good community relationship between people of different races.</li>
+       <li>	Provide a community centre to be used by all group of the community.</li>
+       <li>	Advise the community on health and well-being through social, education leisure etc.</li>
+       <li>	Assist community who are suffering from financial hardship, sickness & distress
+                by providing advice, information, and welfare etc.</li>
+       <li>	Work with Children and young adults through language class, mother & toddle group,
+                providing advice to participating in community activities etc.</li>
+    </ul>
+
+    </div>
+
+    <div class="section">
+        <h2>Our Integrity</h2>
+        <p>We maintain 100% Transparency, deliver our projects at 0% Administration Cost. All financial transactions will be closely monitored by a minimum of two trustees on each payment being
+        made by the Charity. Annual accounts will be published on the website. All monies raised, whether it be
+        fundraising, individual donations or lobbying other organizations, will be dedicated purely to help
+        the people we AID.</p>
+
+    </div>
+</div>
+<div class="scroll-left"><p>Your Every Single Pennies Making Big Difference</p></div>
+
+<!--------------------------------Footer section start------------------------------------------------>
+    <footer>
+        <div class="social-media">
+            <h2>
+                <i class="fa-brands fa-square-facebook"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-square-instagram"></i>
+                <i class="fa-brands fa-youtube"></i>
+            </h2>
+        </div>
+
+        <div class="copy-right">
+            <a>Copyright By Hari, All Rights Reserved By Malar Foundation</a>
+        </div>
+    </footer>
+</body>
+</html>

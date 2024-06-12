@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="icon" href="img/logo.png" type="image/">
+    <title>Malar Foundation</title>
+
+    <style>
+        .container {
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .category {
+            margin-bottom: 40px;
+        }
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            grid-gap: 20px;
+            justify-content: space-around;
+            align-items: center;
+            background-color: rgba(159, 157, 59, 0.66);
+        }
+        .gallery-item {
+            position: relative;
+            width: 100%;
+            padding-bottom: 100%;
+        }
+        .gallery-item img {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 1rem;
+            cursor: pointer;
+        }
+        @media (max-width: 768px) {
+            .gallery {
+                grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+            }
+        }
+    </style>
+<!--------------------------------CSS End------------------------------------------------>
+
+</head>
+<body>
+<header>
+    <div class="menu-logo">
+        <a href="index.html" class="link-format">
+            <img src="img/logo.png" alt="Logo" class="menu-logo-img">
+        </a>
+        <a href="index.html" class="logo-text link-format">Malar Foundation</a>
+    </div>
+
+    <div class="menuToggle"></div>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li>
+                <a href="#">Gallery</a>
+                <ul>
+                    <li>
+                        <a href="photo.html">Photo Gallery</a>
+                    </li>
+
+                    <li>
+                        <a href="video.html">Video Gallery</a>
+
+                    </li>
+                </ul>
+            </li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="about.html">Our Services</a></li>
+            <li><a href="about.html">Contact Us</a></li>
+        </ul>
+    </nav>
+</header>
+
+    <script>
+        let menuToggle = document.querySelector(".menuToggle");
+        let header = document.querySelector("header");
+        menuToggle.onclick = function () {
+            header.classList.toggle("active");
+        };
+    </script>
+<!--------------------------------Header Section End------------------------------------------------>
+
+<div class="banner-section" style="background: url('img/pic1.jpg');background-size: 100% 100%">
+    <div class="donate-button-div">
+        <a href="donation.html" class="donate-link link-format">
+            <button class="donate-button">Donate Here</button></a>
+    </div>
+    <div class="banner-desc">
+        <h1 class="banner-slogan">
+            Welcome <br>To Malar Foundation
+        </h1>
+        <h1 class="banner-slogan-1"> Giving Hands, Changing World </h1>
+    </div>
+</div>
+<!--------------------------------Main Banner Section End------------------------------------------------>
+
+<h1 class="main-heading">Our Photos Gallery</h1>
+<div class="container">
+    <h2>Helping to Children's Education and Rehabilitation. </h2><br>
+    <div class="category">
+        <div class="gallery">
+            <div class="gallery-item">
+                <a href="#" data-fancybox="category1" data-caption="Image 1">
+                    <img src="https://www.soschildrensvillages.lk/getmedia/a64b5a84-0c5c-4f14-89ff-41743eb8c5c0/IMG_6185.JPG?width=425" alt="Image 1">
+                </a>
+            </div>
+            <div class="gallery-item">
+                <a href="#" data-fancybox="category2" data-caption="Image 2">
+                    <img src="https://www.soschildrensvillages.lk/getmedia/26e5dfac-7fd1-4d57-90b1-637c296f96ae/09.JPG?width=1920" alt="Image 2">
+                </a>
+            </div>
+            <div class="gallery-item">
+                <a href="#" data-fancybox="category3" data-caption="Image 3">
+                    <img src="https://www.soschildrensvillages.lk/getmedia/5db77d3a-d835-4fb1-80d0-630437068dcb/Piliyandala-1.JPG?width=768" alt="Image 2">
+                </a>
+            </div>
+            <div class="gallery-item">
+                <a href="#" data-fancybox="category4" data-caption="Image 4">
+                    <img src="https://www.soschildrensvillages.lk/getmedia/fbee2b95-47b1-4068-93d2-11e67e7c8ebf/IMG_5862.JPG?width=1920" alt="Image 2">
+                </a>
+            </div>
+            <div class="gallery-item">
+                <a href="#" data-fancybox="category5" data-caption="Image 5">
+                    <img src="https://www.soschildrensvillages.lk/getmedia/fe138417-c53a-47a4-ae20-a67f8a1ba303/532A6088.JPG?width=1920" alt="Image 2">
+                </a>
+            </div>
+
+        </div>
+    </div>
+<!--------------------------------Photos Section1  End------------------------------------------------>
+
+
+    <h2>Protecting Child Worker and Providing Basic Needs.</h2><br>
+    <div class="category">
+        <div class="gallery">
+            <div class="gallery-item">
+                <a href="#" data-fancybox="category1" data-caption="Image 1">
+                    <img src="img/pic7.jpg" alt="Image 1">
+                </a>
+            </div>
+            <div class="gallery-item">
+                <a href="#" data-fancybox="category1" data-caption="Image 2">
+                    <img src="img/pic14.jpg" alt="Image 2">
+                </a>
+            </div>
+            <div class="gallery-item">
+                <a href="#" data-fancybox="category1" data-caption="Image 3">
+                    <img src="img/pic15.jpg" alt="Image 3">
+                </a>
+            </div>
+            <div class="gallery-item">
+                <a href="#" data-fancybox="category1" data-caption="Image 4">
+                    <img src="img/pic9.jpg" alt="Image 4">
+                </a>
+            </div>
+            <div class="gallery-item">
+                <a href="#" data-fancybox="category1" data-caption="Image 5">
+                    <img src="img/pic6.jpg" alt="Image 5">
+                </a>
+            </div>
+
+        </div>
+    </div>
+<!--------------------------------Photos Section2 End------------------------------------------------>
+
+    <h2>Caring Disabled People and Supporting for Wellbeing. </h2><br>
+    <div class="category">
+        <div class="gallery">
+            <div class="gallery-item">
+                <a href="#" data-fancybox="category1" data-caption="Image 5">
+                    <img src="img/pic3.jpg" alt="Image 5">
+                </a>
+            </div>
+            <div class="gallery-item">
+                <a href="#" data-fancybox="category1" data-caption="Image 5">
+                    <img src="img/pic5.jpg" alt="Image 5">
+                </a>
+            </div>
+            <div class="gallery-item">
+                <a href="#" data-fancybox="category1" data-caption="Image 5">
+                    <img src="img/pic16.jpg" alt="Image 5">
+                </a>
+            </div>
+            <div class="gallery-item">
+                <a href="#" data-fancybox="category1" data-caption="Image 5">
+                    <img src="img/pic13.jpg" alt="Image 5">
+                </a>
+            </div>
+            <div class="gallery-item">
+                <a href="#" data-fancybox="category1" data-caption="Image 5">
+                    <img src="img/pic12.jpg" alt="Image 5">
+                </a>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div class="scroll-left"><p>Today Children, Tomorrow Leaders. Come Forward to Protect Them.</p></div>
+<!--------------------------------Photos section3 End-------Footer Start----------------------------------------->
+
+        <footer>
+            <div class="social-media">
+                <h2>
+                    <i class="fa-brands fa-square-facebook"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-square-instagram"></i>
+                    <i class="fa-brands fa-youtube"></i>
+                </h2>
+            </div>
+
+            <div class="copy-right">
+                <a>Copyright By Hari, All Rights Reserved By Malar Foundation</a>
+            </div>
+        </footer>
+    </body>
+    </html>

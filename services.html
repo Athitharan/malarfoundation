@@ -1,0 +1,183 @@
+<!DOCTYPE html><!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="icon" href="img/logo.png" type="image/">
+    <title>Malar Foundation</title>
+
+    <style>
+        .pro-container{
+            display: grid;
+            grid-template-columns: repeat(6,1fr) ;
+            grid-template-rows: repeat(auto-fit,minmax(40px,auto));
+            grid-template-areas:
+                    "pt1 pt1 pt1 pt2 pt2 pt3"
+                    "pn pn pn pi pi py "
+                    "ps ps ps ps ps ps ";
+        }
+        .project-title1{
+            grid-area: pt1;
+            background-color: rgba(50, 19, 23, 0.58);
+            align-items: center;
+            color: rgb(9, 235, 243);
+        }
+        .project-title2{
+            grid-area: pt2;
+            background-color: rgba(50, 19, 23, 0.58);
+            align-items: center;
+            color: rgb(9, 235, 243);
+        }
+        .project-title3{
+            grid-area: pt3;
+            background-color: rgba(50, 19, 23, 0.58);
+            align-items: center;
+            color: rgb(9, 235, 243);
+        }
+        .project-name{
+            grid-area: pn;
+            line-height: 2rem;
+            text-align: justify;
+            margin: 5px 5px 5px 5px;
+        }
+        .project-img{
+            grid-area: pi;
+            margin: 5px 5px 5px 5px;
+
+        }
+        .project-year{
+            grid-area: py;
+            margin: 50px 50px 50px 50px;
+            font-weight: bold;
+        }
+        .pro-space{
+            grid-area: ps;
+            height:8px;
+            background-color: rgb(11, 10, 10);
+        }
+        .pro-tit{
+            text-align: center;
+            justify-self: center;
+        }
+    </style>
+<!--------------------------------CSS End------------------------------------------------>
+
+</head>
+<body>
+<header>
+    <div class="menu-logo">
+        <a href="index.html" class="link-format">
+            <img src="img/logo.png" alt="Logo" class="menu-logo-img">
+        </a>
+        <a href="index.html" class="logo-text link-format">Malar Foundation</a>
+    </div>
+
+    <div class="menuToggle"></div>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li>
+                <a href="#">Gallery</a>
+                <ul>
+                    <li>
+                        <a href="photo.html">Photo Gallery</a>
+                    </li>
+                    <li>
+                        <a href="video.html">Video Gallery</a>
+                    </li>
+                </ul>
+            </li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="services.html">Our Services</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </nav>
+</header>
+
+<script>
+    let menuToggle = document.querySelector(".menuToggle");
+    let header = document.querySelector("header");
+    menuToggle.onclick = function () {
+        header.classList.toggle("active");
+    };
+</script>
+<!--------------------------------Header Section End------------------------------------------------>
+<div class="banner-section" style="background: url('img/pic1.jpg');background-size: 100% 100%">
+    <div class="donate-button-div">
+        <a href="donation.html" class="donate-link link-format">
+            <button class="donate-button">Donate Here</button></a>
+    </div>
+    <div class="banner-desc">
+        <h1 class="banner-slogan">
+            Welcome <br>To Malar Foundation
+        </h1>
+        <h1 class="banner-slogan-1"> Giving Hands, Changing World </h1>
+    </div>
+</div>
+<!-------------------------------Banner Section End--------About Founder Start---------------------------------------->
+
+<div><h1 class="main-heading">Services Of Malar Foundation</h1></div>
+     <div class="pro-space"> <hr> </div>
+     <div class="pro-container">
+     <div class="project-title1"><h2 class="pro-tit">Project Titles</h2></div>
+     <div class="project-title2"><h2 class="pro-tit">Images</h2></div>
+     <div class="project-title3"><h2 class="pro-tit">Years </h2></div>
+
+
+    <div class="project-name"><b>life is Changing the lives of Disabled</b><br>Every day, new life is changing the lives of disabled and terminally ill children across the Sri Lanka.
+                              The <strong> Malar Foundation</strong> offer a lifeline for families, providing life-changing and life-saving specialist equipment when and where it’s needed.
+                              Childhood cancers, birth defects, accidents, diseases, and infections can all cause disability.
+                              They are affecting children and their families every day.With your support, we can ensure more children
+        get the best possible start in life and fulfil their potential.<br><i><b>Equipment Grant Services</b></i> Providing families directly with
+        essential and life changing equipment, such as beds, buggies, wheelchairs and more. <i><b>Emergency Equipment Loans Service</b></i> Offering
+        free loan of equipment which can help children at significant risk of injury, or in urgent need. Play Therapy Pods Providing a free loan of
+        specialist toys to disabled and terminally ill children, delivered direct to their door.</div>
+        <div class="project-img"><img src="img/pic10.jpg" alt="Disabled pic" width="100%" height="100%"></div>
+        <div class="project-year">Started on October, 2021 <br><br> By Malar Foundation <br><br>Donated by like minded individuals (France)</div>
+        <div class="pro-space"> <hr> </div>
+    </div>
+
+    <div class="pro-container">
+    <div class="project-name"><b>Education is a Key Social and Cultural Rights</b><br> Education is a key social and cultural
+                             rights and plays an important role in reducing poverty and child worker. Furthermore,
+                             education promotes democracy, peace, tolerance, and economic growth. That’s way Malar Foundation
+                             Giving hand them to their bright future.<br><b>The Malar Foundation </b>works to protect children and
+            young people from being employed somewhere that isn't safe. by laws may also restrict the kind of work children can do.
+            We provide all the need for them.<br><b>The Malar Fountation</b> is operating a computer training Centre in the East part of Sri Lanka (Batticaloa)
+            and a Children Home in Batticaloa. Malar Foundation runs its landmark model project in Ampara, where 20 youngsters
+             are getting <i>free computer training, Spoken English and sewing classes.</i></div>
+        <div class="project-img"><img src="img/pic2.jpg" alt="education pic" width="100%" height="100%"></div>
+        <div class="project-year">Started on October, 2020 <br><br> By Malar Foundation <br><br>Donated by like minded individuals (UK)</div>
+        <div class="pro-space"> <hr>  </div>
+        </div>
+
+    <div class="pro-container">
+    <div class="project-name"><b>Children need a healthy balanced diet containing foods</b><br> Children need a healthy balanced diet
+                             containing foods from each food group, so they get a wide range of nutrients to help them stay healthy.<br>
+                            The families who are unable to meet basic needs such as food, housing, and medical care, and other caregivers
+                            experience less stress. The Malar Foundation provide the critical support that children need to grow into healthy,
+                            productive adults. </div>
+        <div class="project-img"><img src="img/pic6.jpg" alt="Team Member1" width="100%" height="100%"></div>
+        <div class="project-year">Started on October, 2021 <br><br> By Malar Foundation <br><br>Donated by like minded individuals (US)</div>
+        <div class="pro-space"> <hr> </div>
+    </div>
+
+<!------------------------------Footer Section Start-------------------------------------------------->
+    <footer>
+        <div class="social-media">
+            <h2>
+                <i class="fa-brands fa-square-facebook"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-square-instagram"></i>
+                <i class="fa-brands fa-youtube"></i>
+            </h2>
+        </div>
+
+    <div class="copy-right">
+        <a>Copyright By Hari, All Rights Reserved By Malar Foundation</a>
+    </div>
+    </footer>
+    </body>
+    </html>

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="icon" href="img/logo.png" type="image/">
+    <title>Malar Foundation</title>
+</head>
+
+<body>
+    <header>
+        <div class="menu-logo">
+            <a href="index.html" class="link-format">
+                <img src="img/logo.png" alt="Logo" class="menu-logo-img">
+            </a>
+            <a href="index.html" class="logo-text link-format">Malar Foundation</a>
+        </div>
+
+        <div class="menuToggle"></div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li>
+                    <a href="#">Gallery</a>
+                    <ul>
+                        <li>
+                            <a href="photo.html">Photo Gallery</a>
+                        </li>
+
+                        <li>
+                            <a href="video.html">Video Gallery</a>
+
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="services.html">Our Services</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <script>
+        let menuToggle = document.querySelector(".menuToggle");
+        let header = document.querySelector("header");
+        menuToggle.onclick = function () {
+            header.classList.toggle("active");
+        };
+    </script>
+ <!--------------------------------Header Section End------------------------------------------------>
+
+    <div class="banner-section" style="background: url('img/pic1.jpg');background-size: 100% 100%">
+        <div class="donate-button-div">
+            <a href="donation.html" class="donate-link link-format">
+                <button class="donate-button">Donate Here</button></a>
+        </div>
+        <div class="banner-desc">
+            <h1 class="banner-slogan">
+                Welcome <br>To Malar Foundation
+            </h1>
+            <h1 class="banner-slogan-1"> Giving Hands, Changing World </h1>
+        </div>
+    </div>
+<!--------------------------------Main Banner Section End------------------------------------------------>
+
+    <div class="banner-block">
+        <div class="banner-block-list">
+            <img src="img/pic12.jpg" alt="Image" class="banner-block-list-img">
+            <span class="banner-block-list-title">Caring Disables</span>
+            <p class="banner-block-list-desc">The Malar Foundation, act confidently when they know what the disables want and respond to all their sounds and actions.  Our staff place their self,  face-to-face and level with disability people and make communication fun.</p>
+            <a href="donation.html" class="link-format"><button class="banner-block-list-button">Donate Here</button></a>
+        </div>
+        <div class="banner-block-list">
+            <img src="img/pic7.jpg" alt="Image" class="banner-block-list-img">
+            <span class="banner-block-list-title">Protecting Child Worker</span>
+            <p class="banner-block-list-desc">The Malar Foundation works to protect children and young people from being employed somewhere that isn't safe. by laws may also restrict the kind of work children can do. We provide all the need for them.</p>
+            <a href="donation.html" class="link-format"><button class="banner-block-list-button">Donate Here</button></a>
+        </div>
+        <div class="banner-block-list">
+            <img src="img/pic11.jpg" alt="Image" class="banner-block-list-img">
+            <span class="banner-block-list-title">Helping to children's Education</span>
+            <p class="banner-block-list-desc">Education is a key social and cultural right and plays an important role in reducing poverty and child labour. Furthermore, education promotes democracy, peace, tolerance. That’s way Malar Foundation Giving hand them to their bright future.</p>
+            <a href="donation.html" class="link-format"><button class="banner-block-list-button">Donate Here</button></a>
+        </div>
+    </div>
+<!--------------------------------Body Blocks End------------------------------------------------>
+
+    <div class="video-heading">
+        <h1>OUR VISION - <i><b>"Making Smile, Changing Life"</b></i></h1>
+    </div>
+    <div class="video-banner">
+
+       <iframe width="100%" height="100%"
+               src="https://www.youtube.com/embed/wYGyYVzFx6M?si=sYeioCkd7Kb6MRf0"
+               title="YouTube video player"
+               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+               referrerpolicy="strict-origin-when-cross-origin"
+               allowfullscreen>
+        </iframe>
+        <div class="scroll-left"><p>We can be the First Generation that Ends Poverty. Please Join with Us</p></div>
+    </div>
+<!--------------------------------Video Banner End----Footer Start--------------------------------->
+    <footer>
+        <div class="social-media">
+            <h2>
+                <i class="fa-brands fa-square-facebook"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-square-instagram"></i>
+                <i class="fa-brands fa-youtube"></i>
+            </h2>
+        </div>
+
+        <div class="copy-right">
+            <a>Copyright By Hari, All Rights Reserved By Malar Foundation</a>
+        </div>
+    </footer>
+
+</body>
+</html>
